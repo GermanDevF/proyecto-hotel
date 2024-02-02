@@ -1,85 +1,115 @@
 @import "../../vars.css";
 
 .container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 116px;
-    z-index: 1;
-    margin-left: 10%;
-    margin-right: 20%;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 116px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 20%;
+  height: 100vh;
+}
 
+.containerBtn {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  z-index: 1;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.welcome {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.titleHotel {
+  font-family: zen-antique;
+  font-size: 103px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 10.78px;
+}
+
+.description {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  text-wrap: pretty;
+}
+
+.bookBtn {
+  font-family: Montserrat;
+  text-decoration: none;
+  background-color: var(--color-btn);
+  color: var(--color-text);
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.scrollBtn {
+  font-family: Montserrat;
+  text-decoration: none;
+  background-color: var(--color-text);
+  color: var(--color-secundary);
+  border-radius: 50%; /* Cambia el valor de border-radius a 50% para hacerlo redondo */
+  font-weight: 600;
+  width: 50px; /* Ajusta el ancho y el alto según tus preferencias */
+  height: 50px; /* Ajusta el ancho y el alto según tus preferencias */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .containerBtn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    z-index: 1;
-    margin-left: 50%;
- 
+    margin-left: 5%;
   }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: var(--color-text);
-    z-index: 1;
-  }
-  
   .welcome {
-    font-family: Montserrat;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .titleHotel {
-    font-family: zen-antique;
-    font-size: 103px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 10.78px;
-  }
-
-  .description {
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2.5px;
-  }
-
-  .bookBtn {
-    font-family: Montserrat;
-    text-decoration: none;
-    background-color: var(--color-btn);
-    color: var(--color-text);
-    border-radius: 10px;
     font-size: 30px;
-    font-weight: 600;
-    padding: 17px 26px;
-    cursor: pointer;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   }
-
+  .titleHotel {
+    font-size: 60px;
+    letter-spacing: 6.28px;
+  }
+  .description {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .bookBtn {
+    font-size: 20px;
+    padding: 10px 13px;
+  }
   .scrollBtn {
-    font-family: Montserrat;
-    text-decoration: none;
-    background-color: var(--color-text);
-    color: var(--color-secundary);
-    border-radius: 50%; /* Cambia el valor de border-radius a 50% para hacerlo redondo */
-    font-weight: 600;
-    width: 50px; /* Ajusta el ancho y el alto según tus preferencias */
-    height: 50px; /* Ajusta el ancho y el alto según tus preferencias */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    margin-left: 10%;
+    width: 40px;
+    height: 40px;
+  }
 }

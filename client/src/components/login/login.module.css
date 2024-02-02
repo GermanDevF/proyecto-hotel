@@ -1,77 +1,104 @@
 @import "../../vars.css";
 
 .container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    margin-left: 10%;
-    margin-right: 20%;
-  }
-
-  .container2 {
-    background-color: var(--color-text);
-    position: relative;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    padding: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
 }
 
+.container2 {
+  background-color: var(--color-text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: var(--color-text);
-    z-index: 1;
-  }
-  
-  .welcome {
-    font-family: Montserrat;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    margin-left: 400px;
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
 
-  .entradas{
-    border: 2px solid rgba(20, 39, 74, 0.50);; 
-    border-radius: 0; 
-    padding: 10px; 
-    font-size: 16px; 
-    width: 500px;
-    margin-bottom: 30px;
+.welcome {
+  font-family: Montserrat;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+}
+
+.entradas {
+  border: 2px solid rgba(20, 39, 74, 0.5);
+  border-radius: 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 500px;
+  margin-bottom: 30px;
 }
 
 .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-    margin: 0 10%;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  justify-content: center;
+}
 
+.description {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: var(--color-secundary);
+}
+
+.bookBtn {
+  font-family: Montserrat;
+  text-decoration: none;
+  background-color: var(--color-btn);
+  color: var(--color-text);
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .welcome {
+    font-size: 40px;
+    margin-left: 0;
+  }
   .description {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1px;
-    color: var(--color-secundary);
+    font-size: 20px;
   }
-
   .bookBtn {
-    font-family: Montserrat;
-    text-decoration: none;
-    background-color: var(--color-btn);
-    color: var(--color-text);
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 17px 26px;
-    cursor: pointer;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding: 10px 20px;
   }
+  .entradas {
+    width: 300px;
+  }
+  .navbar {
+    margin: 0 5%;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .container2 {
+    padding: 20px;
+  }
+}
